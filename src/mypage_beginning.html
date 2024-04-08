@@ -1,29 +1,72 @@
 <!DOCTYPE html>
-<html>
- <head>
-    <title>Mi página personal</title>
- </head>
- <body>
-  <h1>Mi página personal</h1>
-  <h2>¡Hola!</h2>
-  <p>
-    Bienvenido a mi página personal. Soy Kelly, me gusta enseñar Ing de Sw a niñ@s y jóvenes. En esta página, compartiré información sobre mí.
-  </p> 
-  <img src="img/WallpaperDISC.png" alt="Mi Foto" width="500" height="333">
-  <table>
-    <tr>
-        <th>Lenguajes de programación</th>
-        <th>Idiomas</th>
-        <th>Hobbies</th>
-    </tr>
-    <tr>
-        <td>Java, Python</td>
-        <td>Español, Inglés, Francés</td>
-        <td>Pilates</td>
-    </tr>
-  </table>  
-  <p>
-  <a href="https://profesores.virtual.uniandes.edu.co/kjgarces971/es/inicio/" target="_blank">Página institucional</a>
-  </p>
-  </body>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Madrid - Página Web</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <header class="bg-dark text-light py-4">
+        <div class="container">
+            <h1>Real Madrid</h1>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#acerca">Acerca de</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-md-6">
+                <section id="imagen">
+                    <img src="img/mimandril.jpg" class="img-fluid" alt="Escudo del Real Madrid">
+                </section>
+            </div>
+            <div class="col-md-6">
+                <section id="informacion">
+                    <h2>Información</h2>
+                    <p>El Real Madrid Club de Fútbol, conocido simplemente como Real Madrid, es un club de fútbol profesional con sede en Madrid, España. <a href="https://www.realmadrid.com">Visita la página oficial</a>.</p>
+                </section>
+
+                <section id="lista">
+                    <h2>Jugadores Destacados</h2>
+                    <ul>
+                        <li>Cristiano Ronaldo</li>
+                        <li>Vinicius Junior</li>
+                        <li>Jude Bellingham</li>
+                        <li>Toni Kroos</li>
+                        <li>Luka Modric</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <section id="formulario">
+                    <h2>Suscripción</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="email">Correo Electrónico:</label>
+                            <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Suscribirse</button>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <p>&copy; 2024 Real Madrid. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
 </html>
